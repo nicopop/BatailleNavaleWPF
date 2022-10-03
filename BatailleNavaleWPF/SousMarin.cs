@@ -9,7 +9,8 @@ namespace BatailleNavaleWPF
 {
     internal class SousMarin : Navire
     {
-        public SousMarin(Case[] carres) : base(carres, 1)
+        public static new int Longueur { get; } = 1;
+        public SousMarin(Case[] carres) : base(carres)
         {
         }
     }

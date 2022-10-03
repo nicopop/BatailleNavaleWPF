@@ -6,14 +6,12 @@ namespace BatailleNavaleWPF
     {
         //public TypeNavire Type { get; }
         public bool Coule { get => EstCoule(); }
-        public int Longueur { get; }
 
         private readonly Case[] cases;
 
-        public Navire (Case[] carres, int longeur)
+        public Navire (Case[] carres)
         {
             cases = carres;
-            Longueur = longeur;
             foreach (Case carre in cases)
             {
                 carre.Navire = this;

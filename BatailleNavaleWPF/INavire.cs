@@ -10,6 +10,5 @@ namespace BatailleNavaleWPF
     internal interface INavire
     {
         bool Coule { get; }
-        int Longueur { get; }
     }
 }
