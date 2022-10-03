@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace BatailleNavale
+namespace BatailleNavaleWPF
 {
-    class Navire
+    class Navire : INavire
     {
         public TypeNavire Type { get; }
         public bool Coule { get => EstCoule(); }

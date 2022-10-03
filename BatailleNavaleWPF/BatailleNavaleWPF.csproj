@@ -58,6 +58,10 @@
     </ApplicationDefinition>
     <Compile Include="INavire.cs" />
     <Compile Include="Matrice2D.cs" />
+    <Compile Include="Destroyer.cs" />
+    <Compile Include="Cuirasse.cs" />
+    <Compile Include="PorteAvions.cs" />
+    <Compile Include="Patrouilleur.cs" />
     <Compile Include="SousMarin.cs" />
     <Compile Include="TypeNavire.cs" />
     <Page Include="MainWindow.xaml">

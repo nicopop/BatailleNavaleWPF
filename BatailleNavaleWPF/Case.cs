@@ -1,4 +1,4 @@
-﻿namespace BatailleNavale
+﻿namespace BatailleNavaleWPF
 {
     class Case
     {

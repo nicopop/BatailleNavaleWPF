@@ -1,4 +1,4 @@
-﻿using BatailleNavale;
+﻿using BatailleNavaleWPF;
 using System;
 using System.Collections.Generic;
 using System.Linq;

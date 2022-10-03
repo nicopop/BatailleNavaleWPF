@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BatailleNavale
+namespace BatailleNavaleWPF
 {
     class Grille
     {
