@@ -29,7 +29,8 @@ namespace BatailleNavaleWPF
             Matrice = new Matrice2D(NbLignes, NbColonnes) { IndexDepart = 1 };
 
             // On place les navires pour un début de partie
-            PlacerNavire(TypeNavire.SousMarin);
+            new SousMarin(TrouverPlace(2));
+            //PlacerNavire(SousMarin);
             PlacerNavire(TypeNavire.SousMarin);
             PlacerNavire(TypeNavire.Destroyer);
             PlacerNavire(TypeNavire.Destroyer);

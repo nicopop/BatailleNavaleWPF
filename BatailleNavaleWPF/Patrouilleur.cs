@@ -7,18 +7,10 @@ using System.Threading.Tasks;
 
 namespace BatailleNavaleWPF
 {
-    internal class Patrouilleur : INavire
+    internal class Patrouilleur : Navire
     {
-        public bool Coule { get => EstCoule(); }
-        private readonly Case[] Cases;
-
-        private bool EstCoule()
+        public Patrouilleur(Case[] carres) : base(carres, 3)
         {
-            foreach (Case carre in Cases)
-            {
-                if (!carre.Touche) return false;
-            }
-            return true;
         }
     }
 }

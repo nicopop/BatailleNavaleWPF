@@ -7,18 +7,10 @@ using System.Threading.Tasks;
 
 namespace BatailleNavaleWPF
 {
-    internal class Cuirasse : INavire
+    internal class Cuirasse : Navire
     {
-        public bool Coule { get => EstCoule(); }
-        private readonly Case[] Cases;
-
-        private bool EstCoule()
+        public Cuirasse(Case[] carres) : base(carres, 4)
         {
-            foreach (Case carre in Cases)
-            {
-                if (!carre.Touche) return false;
-            }
-            return true;
         }
     }
 }

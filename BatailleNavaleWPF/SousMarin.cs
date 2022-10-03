@@ -7,18 +7,10 @@ using System.Threading.Tasks;
 
 namespace BatailleNavaleWPF
 {
-    internal class SousMarin : INavire
+    internal class SousMarin : Navire
     {
-        public bool Coule { get => EstCoule(); }
-        private readonly Case[] Cases;
-
-        private bool EstCoule()
+        public SousMarin(Case[] carres) : base(carres, 1)
         {
-            foreach (Case carre in Cases)
-            {
-                if (!carre.Touche) return false;
-            }
-            return true;
         }
     }
 }
