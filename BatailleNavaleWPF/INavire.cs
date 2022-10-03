@@ -10,5 +10,6 @@ namespace BatailleNavaleWPF
     internal interface INavire
     {
         bool Coule { get; }
+        char Type { get; }
     }
 }

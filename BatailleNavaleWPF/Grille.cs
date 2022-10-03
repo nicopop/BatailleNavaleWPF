@@ -36,20 +36,8 @@ namespace BatailleNavaleWPF
             new Cuirasse(TrouverPlace(Cuirasse.Longueur));
             new Patrouilleur(TrouverPlace(Patrouilleur.Longueur));
             new PorteAvions(TrouverPlace(PorteAvions.Longueur));
-            //PlacerNavire(SousMarin);
-            //PlacerNavire(TypeNavire.SousMarin);
-            //PlacerNavire(TypeNavire.Destroyer);
-            //PlacerNavire(TypeNavire.Destroyer);
-            //PlacerNavire(TypeNavire.Cuirasse);
-            //PlacerNavire(TypeNavire.Patrouilleur);
-            //PlacerNavire(TypeNavire.PorteAvions);
         }
 
-        //private void PlacerNavire(TypeNavire typeNavire)
-        //{
-        //    Case[] cases = TrouverPlace((int)typeNavire);
-        //    new Navire(typeNavire, cases);
-        //}
 
         // Trouve une place vide au hasard pour le nombre de cases demandé (la méthode assume qu'il y a de la place)
         private Case[] TrouverPlace(int nbCases)
@@ -151,24 +139,7 @@ namespace BatailleNavaleWPF
                     if (GetNavire(i, j, out Navire navire))
                     {
                         char type = navire.Type;
-                        //switch (navire.Type)
-                        //{
-                        //    case TypeNavire.Cuirasse:
-                        //        type = 'C';
-                        //        break;
-                        //    case TypeNavire.Destroyer:
-                        //        type = 'D';
-                        //        break;
-                        //    case TypeNavire.Patrouilleur:
-                        //        type = 'P';
-                        //        break;
-                        //    case TypeNavire.PorteAvions:
-                        //        type = 'A';
-                        //        break;
-                        //    case TypeNavire.SousMarin:
-                        //        type = 'S';
-                        //        break;
-                        //}
+
                         chaine += $" {type} ";
                     }
                     else
