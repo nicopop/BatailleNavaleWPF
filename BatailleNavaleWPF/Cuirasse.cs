@@ -9,7 +9,7 @@ namespace BatailleNavaleWPF
 {
     internal class Cuirasse : Navire
     {
-        public static new int Longueur { get; } = 4;
+        public static int Longueur { get; } = 4;
         public Cuirasse(Case[] carres) : base(carres)
         {
         }

@@ -9,7 +9,7 @@ namespace BatailleNavaleWPF
 {
     internal class Patrouilleur : Navire
     {
-        public static new int Longueur { get; } = 3;
+        public static int Longueur { get; } = 3;
         public Patrouilleur(Case[] carres) : base(carres)
         {
         }

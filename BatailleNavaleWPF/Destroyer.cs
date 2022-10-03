@@ -9,7 +9,7 @@ namespace BatailleNavaleWPF
 {
     internal class Destroyer : Navire
     {
-        public static new int Longueur { get; } = 2;
+        public static int Longueur { get; } = 2;
         public Destroyer(Case[] carres) : base(carres)
         {
         }
