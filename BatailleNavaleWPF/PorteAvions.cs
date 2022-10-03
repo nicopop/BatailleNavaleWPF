@@ -10,7 +10,7 @@ namespace BatailleNavaleWPF
     internal class PorteAvions : Navire
     {
         public static int Longueur { get; } = 5;
-        public PorteAvions(Case[] carres) : base(carres)
+        public PorteAvions(Case[] carres) : base(carres,'A')
         {
         }
     }

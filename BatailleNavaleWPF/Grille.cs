@@ -150,7 +150,7 @@ namespace BatailleNavaleWPF
                 {
                     if (GetNavire(i, j, out Navire navire))
                     {
-                        char type = 'X';
+                        char type = navire.Type;
                         //switch (navire.Type)
                         //{
                         //    case TypeNavire.Cuirasse:
